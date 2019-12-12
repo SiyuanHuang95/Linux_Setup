@@ -1,0 +1,80 @@
+**.pptx#
+*/*.pptx#
+.*
+!/.gitignore
+
+# do not ignore stuff in tools/
+!tools/*
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+#*.exe
+*.out
+*.app
+
+# temporary editor files
+*~
+*.orig
+
+# Compiled python.
+tools/lint/autolintc
+*.pyc
+
+# Eclipse.
+.project
+.cproject
+.settings
+
+# QtCreator
+CMakeLists.txt.user
+*.config
+*.creator
+*.creator.*
+*.files
+*.includes
+*/debug/
+
+# MacOS Desktop Services Store
+.DS_Store
+
+# VisualGDB
+# see https://visualgdb.com/tutorials/arm/multiuser/
+CodeDB/
+Debug/
+Release/
+VisualGDBCache/
+.vs/
+*.opensdf
+*.sdf
+*.suo
+*.old
+*.user
+
+# build directory for AirSimInterface
+simulation/airsim_interface/build/
+
+# temp files
+*.TMP
+
+# do not ignore some files in tools/
+!tools/win-clang-format-6.0.0.exe
+!tools/ubuntu-clang-format-6.0.0
+
+# Matlab generated files
+matlab_gen/
