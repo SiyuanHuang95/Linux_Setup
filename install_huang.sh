@@ -72,6 +72,20 @@ sudo apt-get install apt-transport-https
 sudo apt-get update
 sudo apt-get install code # or code-insiders
 
-# cLion
-sudo apt install cmake gcc g++ clang
+# cLion: download the tar.gz package to Downloads BEFORE!!!
+# sudo apt install cmake gcc g++ clang
+# sudo tar xfz ~/Downloads/CLion-*.tar.gz -C /opt
+# cd /opt/clion-<version>/bin
+# ./clion.sh
+CD 
+
+# catkin_build
+sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu `lsb_release -sc` main" > /etc/apt/sources.list.d/ros-latest.list'
+wget http://packages.ros.org/ros.key -O - | sudo apt-key add -
+sudo apt-get update
+sudo apt-get install python-catkin-tools
+
+# htop
+sudo apt install htop
+
 
