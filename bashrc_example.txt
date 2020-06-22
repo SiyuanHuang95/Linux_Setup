@@ -118,3 +118,6 @@ if ! shopt -oq posix; then
   fi
 fi
 source /opt/ros/kinetic/setup.bash
+
+# this fix the python version problem when you have installed anaconda, but would use ros1
+export PYTHONPATH=$PYTHONPATH:/usr/lib/python2.7/dist-packages
