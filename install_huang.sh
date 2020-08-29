@@ -25,7 +25,6 @@ sudo apt install zotero
 
 # ceres
 
-git clone https://ceres-solver.googlesource.com/ceres-solver
 # CMake
 sudo apt-get install cmake
 # google-glog + gflags
@@ -44,6 +43,12 @@ sudo apt-get install libsuitesparse-dev
 sudo add-apt-repository ppa:bzindovic/suitesparse-bugfix-1319687
 sudo apt-get update
 sudo apt-get install libsuitesparse-dev
+
+######################
+##!!!!NOTICE HERE!!!##
+######################
+## IF YOU ARE USING UBUNTU 16.04, PLEASE NOT USE GIT CLONE TO GET TE LATEST VERSION
+## INSTEAD, PLEASE DIRECTLY DOWNLOAD THE PACKAGE FROM THE WEBSITE
 git clone https://ceres-solver.googlesource.com/ceres-solver
 cd ceres-bin
 cmake ../ceres-solver-1.14.0
